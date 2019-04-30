@@ -58,6 +58,7 @@ import { ToastOptions } from './toast-options';
  * @advanced
  * | Property              | Type      | Default         | Description                                                                                                   |
  * |-----------------------|-----------|-----------------|---------------------------------------------------------------------------------------------------------------|
+ * | title                 | `string`  | -               | The title for the toast
  * | message               | `string`  | -               | The message for the toast. Long strings will wrap and the toast container will expand.                        |
  * | duration              | `number`  | -               | How many milliseconds to wait before hiding the toast. By default, it will show until `dismiss()` is called.  |
  * | position              | `string`  | "bottom"        | The position of the toast on the screen. Accepted values: "top", "middle", "bottom".                          |
