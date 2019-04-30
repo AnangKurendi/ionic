@@ -16,6 +16,7 @@ import { ViewController } from '../../navigation/view-controller';
       '[class.toast-middle]="d.position === \'middle\'" ' +
       '[class.toast-top]="d.position === \'top\'"> ' +
       '<div class="toast-container"> ' +
+        '<div class="toast-title" *ngIf="d.title">{{d.title}}</div> ' +
         '<div class="toast-message" id="{{hdrId}}" *ngIf="d.message">{{d.message}}</div> ' +
         '<button ion-button clear class="toast-button" *ngIf="d.showCloseButton" (click)="cbClick()"> ' +
           '{{ d.closeButtonText || \'Close\' }} ' +
@@ -30,6 +31,7 @@ import { ViewController } from '../../navigation/view-controller';
 })
 export class ToastCmp implements AfterViewInit {
   d: {
+    title?: string;
     message?: string;
     cssClass?: string;
     duration?: number;
