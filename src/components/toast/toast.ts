@@ -50,6 +50,14 @@ export class Toast extends ViewController {
     return position === TOAST_POSITION_TOP || position === TOAST_POSITION_MIDDLE || position === TOAST_POSITION_BOTTOM;
   }
 
+    /**
+   * @param {string} title  Toast title content
+   */
+  setTitle(title: string): Toast {
+    this.data.title = title;
+    return this;
+  }
+  
   /**
    * @param {string} message  Toast message content
    */
