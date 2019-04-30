@@ -1,5 +1,6 @@
 
 export interface ToastOptions {
+  title?: string;
   message?: string;
   cssClass?: string;
   duration?: number;
